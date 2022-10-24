@@ -1,0 +1,43 @@
+plugins {
+    id 'com.android.library'
+    id 'org.jetbrains.kotlin.android'
+    id("com.apollographql.apollo3").version("3.6.2")
+}
+
+
+android {
+    namespace 'com.kibettheophilus.data'
+    compileSdk 33
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+    packagingOptions {
+        resources {
+            excludes += '/META-INF/{AL2.0,LGPL2.1}'
+        }
+    }
+}
+
+dependencies {
+    implementation("com.apollographql.apollo3:apollo-runtime:3.6.2")
+    implementation(project(":domain"))
+    implementation("io.insert-koin:koin-android:3.1.5")
+}
+
+
+apollo {
+    packageName.set("com.kibettheophilus.data")
+}
+
+
