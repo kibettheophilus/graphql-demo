@@ -1,4 +1,4 @@
-package com.kibettheophilus.feature
+package com.kibettheophilus.feature.viewmodel
 
 import android.util.Log
 import androidx.lifecycle.LiveData
