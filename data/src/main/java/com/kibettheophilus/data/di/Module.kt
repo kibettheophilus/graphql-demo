@@ -1,6 +1,6 @@
 import com.apollographql.apollo3.ApolloClient
-import com.kibettheophilus.data.LaunchListRepositoryImpl
-import com.kibettheophilus.domain.LaunchListRepository
+import com.kibettheophilus.data.datasource.LaunchListRepositoryImpl
+import com.kibettheophilus.domain.repository.LaunchListRepository
 import org.koin.core.module.Module
 import org.koin.dsl.module
 

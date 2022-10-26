@@ -3,7 +3,7 @@ package com.kibettheophilus.feature
 import android.util.Log
 import androidx.lifecycle.ViewModel
 import com.kibettheophilus.domain.LaunchDataDomain
-import com.kibettheophilus.domain.LaunchListRepository
+import com.kibettheophilus.domain.repository.LaunchListRepository
 
 class LaunchListViewModel(private val repository: LaunchListRepository) : ViewModel() {
     suspend fun launchList(): LaunchDataDomain {
