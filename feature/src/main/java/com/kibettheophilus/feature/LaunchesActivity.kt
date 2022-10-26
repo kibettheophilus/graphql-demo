@@ -11,8 +11,10 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.kibettheophilus.feature.ui.theme.GraphQlDemoTheme
+import org.koin.androidx.viewmodel.ext.android.viewModel
 
 class LaunchesActivity : ComponentActivity() {
+    private val viewModel: LaunchListViewModel by viewModel()
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
