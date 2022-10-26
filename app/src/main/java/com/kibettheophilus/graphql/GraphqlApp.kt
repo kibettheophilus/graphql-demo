@@ -13,7 +13,7 @@ class GraphqlApp : Application() {
             androidContext(this@GraphqlApp)
             modules(
                 listOf(
-                    appModule, dataModule, featureModule
+                    dataModule, featureModule
                 )
             )
         }

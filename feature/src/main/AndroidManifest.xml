@@ -3,7 +3,7 @@
 
     <application>
         <activity
-            android:name=".LaunchesActivity"
+            android:name=".activity.LaunchesActivity"
             android:exported="true"
             android:label="@string/title_activity_launches"
             android:theme="@style/Theme.GraphQlDemo">
