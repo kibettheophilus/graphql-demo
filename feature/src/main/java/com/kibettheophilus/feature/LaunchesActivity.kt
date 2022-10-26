@@ -1,6 +1,7 @@
 package com.kibettheophilus.feature
 
 import android.os.Bundle
+import android.util.Log
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.foundation.layout.fillMaxSize
@@ -25,6 +26,7 @@ class LaunchesActivity : ComponentActivity() {
                     color = MaterialTheme.colors.background
                 ) {
                     Greeting("Android")
+                    Log.d("DATAGRQU","${viewModel.launchList.value}")
                 }
             }
         }
