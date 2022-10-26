@@ -2,7 +2,7 @@ package com.kibettheophilus.graphql
 
 import android.app.Application
 import com.kibettheophilus.feature.di.featureModule
-import dataModule
+import com.kibettheophilus.data.di.dataModule
 import org.koin.android.ext.koin.androidContext
 import org.koin.core.context.startKoin
 

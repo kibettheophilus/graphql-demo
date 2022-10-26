@@ -13,10 +13,12 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.kibettheophilus.feature.ui.theme.GraphQlDemoTheme
 import com.kibettheophilus.feature.viewmodel.LaunchListViewModel
+import com.kibettheophilus.feature.viewmodel.LoginViewModel
 import org.koin.androidx.viewmodel.ext.android.viewModel
 
 class LaunchesActivity : ComponentActivity() {
     private val viewModel: LaunchListViewModel by viewModel()
+    private val loginviewModel: LoginViewModel by viewModel()
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
@@ -27,7 +29,8 @@ class LaunchesActivity : ComponentActivity() {
                     color = MaterialTheme.colors.background
                 ) {
                     Greeting("Android")
-                    Log.d("DATAGRQU","${viewModel.launchList.value}")
+                    Log.d("DATAGRQU", "${viewModel.launchList.value}")
+                    Log.d("DATAGRQU", "${loginviewModel.token.value}")
                 }
             }
         }
