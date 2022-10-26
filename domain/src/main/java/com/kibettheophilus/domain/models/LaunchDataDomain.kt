@@ -1,4 +1,4 @@
-package com.kibettheophilus.domain
+package com.kibettheophilus.domain.models
 
 data class LaunchDataDomain(
     val launches: Launches

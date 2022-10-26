@@ -5,7 +5,7 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.kibettheophilus.domain.LaunchDataDomain
+import com.kibettheophilus.domain.models.LaunchDataDomain
 import com.kibettheophilus.domain.repository.LaunchListRepository
 import kotlinx.coroutines.launch
 

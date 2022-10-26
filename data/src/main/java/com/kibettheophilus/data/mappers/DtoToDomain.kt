@@ -1,7 +1,7 @@
 import com.kibettheophilus.data.LaunchListQuery
 import com.kibettheophilus.data.LoginMutation
-import com.kibettheophilus.domain.LaunchDataDomain
-import com.kibettheophilus.domain.Launches
+import com.kibettheophilus.domain.models.LaunchDataDomain
+import com.kibettheophilus.domain.models.Launches
 import com.kibettheophilus.domain.models.TokenDataDomain
 
 fun LaunchListQuery.Data.toDomain() = LaunchDataDomain(
